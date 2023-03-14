@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title>Registration form</title>
+
+</head>
+<body>
+      <div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-md w-full space-y-8">
+              <div>
+                <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                 REGISTRATION FORM
+                </h2>
+                </div>
+                <style>
+                  input#name:invalid:focus{
+                        border:1px solid red;
+                  }
+                  input#email:invalid:focus{
+                        border:1px solid red;
+
+                  }
+                </style>
+
+            <form id="user-form">
+                  <div>
+                        <label for="name" class="text-md w-40 inline-block font-medium leading-5 text-black-600">
+                              Name:
+                        </label>
+                        <input id="name" name="name" type="text" autocomplete="name" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder=" Enter name">
+                  
+                 
+                        <label for="email-address" class="text-md w-40 inline-block font-medium leading-5 text-black-600">
+                              Email address:
+                        </label>
+                        <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder=" Enter Email address">
+                 
+                 
+                        <label for="password" class="text-md w-40 inline-block font-medium leading-5 text-gray-700">
+                              Password:
+                        </label>
+                        <input id="password" name="password" type="password" autocomplete="new-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Enter Password">
+                 
+                
+              
+                        <label for="dob" class="text-md w-40 inline-block font-medium leading-5 text-black-600">
+                              Date of Birth:
+                        </label>
+                        <input type="date" id="dob" name="dob"required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="dob">
+              
+                        <div>
+                              <input type="checkbox" id="acceptTerms" name="acceptTerms" class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-3 mb-5 text-base leading-6 placeholder-gray-500 focus:outline-none focus:placeholder-g"placeholder="acceptTerms">
+                              <label for="accept terms" class="text-md w-50 inline-block font-medium leading-5 text-gray-700">
+                                    Accept terms & conditions
+      
+      
+
+                        </div>
+                        
+
+                        </label>
+                        
+                  </div>
+                       <div>
+                        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                              Submit
+                        </button>
+                        </div>
+                       
+
+                  
+                
+                       
+                 
+
+                  </form>
+            </div>
+      </div>
+     
+
+
+
+          
+
+                  
+            <div class="relative bg-white px-6 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-600/5 sm:mx-auto sm:rounded-lg sm:px-10">
+                        <div class="mx-auto">
+                              <h2 class="text-3xl text-center font-bold leading-tight">Entries</h2>
+                              <div class="divide-y divide-gray-300/50" id="user-entries">
+
+                              </div>
+
+                        </div>
+
+            </div>
+<script src="./index.js">
+
+</script>
+            
+</body>
+</html>
